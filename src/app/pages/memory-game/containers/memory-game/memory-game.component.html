@@ -1,0 +1,11 @@
+<div class="board-container">
+
+  <div class="players">
+    <div class="player-one player" [ngStyle]="{'border': playerNumber === 1 ? '2px solid black' : 'none'}">Player 1</div>
+    <div class="player-two player" [ngStyle]="{'border': playerNumber === 2 ? '2px solid black' : 'none'}">Player 2</div>
+  </div>
+
+  <div class="board-game">
+    <board-game [playerNumber]="playerNumber"></board-game>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="winner-name">{{winner}}</h1>
+  <h3 class="text">Number of correct cards</h3>
+  <div class="result-box">{{numberOfCorrectCards}}</div>
+
+  <nz-table #basicTable [nzData]="logs" [nzScroll]="{ y: '240px' }" >
+    <thead>
+      <tr>
+        <th>Player name</th>
+        <th>Cards number</th>
+        <th>Success</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{ data.playerName }}</td>
+        <td>Opens card {{ data.cards[0] }} and {{ data.cards[1] }}</td>
+        <td>{{ data.status }}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+
+</div>

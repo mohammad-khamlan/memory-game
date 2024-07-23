@@ -1,0 +1,5 @@
+<div class="container" [ngStyle]="{'pointer-events': openedCard[1] === undefined ? 'initial' : 'none'}">
+  <div class="cards" *ngFor="let card of cardsData; let i = index;">
+    <flip-card [data]="card.value" [isOpen]="card.isOpen" (click)="cardClicked(i)"></flip-card>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="flip-card" [@cardFlip]="isOpen">
+    <span *ngIf="isOpen" class="number-text"
+      [ngStyle]="{'transform': isOpen ? 'scale(-1, 1)' : 'none'}">{{data}}</span>
+</div>

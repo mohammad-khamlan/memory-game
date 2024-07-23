@@ -1,0 +1,13 @@
+.flip-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+}
+
+.number-text{
+    font-size: 22px;
+}
